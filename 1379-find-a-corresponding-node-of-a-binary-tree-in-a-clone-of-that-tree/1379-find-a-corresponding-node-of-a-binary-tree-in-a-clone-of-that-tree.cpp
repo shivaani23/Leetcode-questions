@@ -19,9 +19,6 @@ public:
         }
         TreeNode*l= getTargetCopy(original->left,cloned->left,target);
         TreeNode*r = getTargetCopy(original->right,cloned->right,target);
-        if(l!=NULL){
-            return l;
-        }
-        return r;
+        return (l!=NULL)?l:r;
     }
 };
