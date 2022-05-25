@@ -11,10 +11,6 @@ public:
         }
         for(int i=0;i<len;i++){
             dp[i][i] =1;
-            
-            if(s[i]==s[i+1] && i+1<len){
-                dp[i][i+1] = 1;
-            }
         }
         ans += s[0];
         for(int i=len-1;i>=0;i--){
