@@ -1,6 +1,7 @@
 class Solution {
 public:
     int longestValidParentheses(string s) {
+        //Time Complexity -> O(n) , space complexity -> O(n)
         stack<int>st;
         int maxlen =0 , len =0;
         st.push(-1);
